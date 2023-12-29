@@ -30,7 +30,7 @@ if (isset($_POST["em"])) {
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
             $mail->Username = 'iharathathsara31@gmail.com';
-            $mail->Password = 'rjzoyhnjqccxvjtd';
+            $mail->Password = 'password';
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
             $mail->setFrom('iharathathsara31@gmail.com', 'desertadmin');
