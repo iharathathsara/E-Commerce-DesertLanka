@@ -1,0 +1,269 @@
+@font-face {
+    font-family: "QuickSand";
+    src: url("font/Quicksand-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Honey";
+    src: url("font/HoneyScript-Light.ttf");
+}
+
+* {
+    font-family: "QuickSand";
+    font-size: 14px;
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #ffc107;
+}
+
+.navTitle {
+    font-family: "Honey";
+}
+
+.aboutImg {
+    background-image: url("resourses/bgimg/bg3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nav_item {
+    position: relative;
+    color: black;
+}
+
+.nav_item::after {
+    content: '';
+    height: 5px;
+    width: 0%;
+    background: #ffcd36;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav_item:hover::after {
+    width: 100%;
+}
+
+.bg-area{
+    position: fixed;
+    left: -50%;
+    right: -50%;
+    top: 0;
+    bottom: 0;
+    animation: animate 5s ease-in-out infinite alternate;
+    background: linear-gradient(90deg, #f3f34f 50%, #ffffc2 -50%);
+    opacity: .5;
+    z-index: -1;
+}
+
+.layer-2{
+    animation-direction: alternate-reverse;
+    animation-duration: 3s;
+}
+
+.layer-3{
+    animation-duration: 5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
+
+.shopHeadderImg {
+    background-image: url("resourses/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.logo {
+    background-image: url("resourses/logo.png");
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title1 {
+    font-family: "Honey";
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.background {
+    background-image: url("resourses/bgimg/bgimg6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.title02 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.search-btn {
+    height: 43px;
+}
+
+.shopProductCard:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.shopCategory {
+    font-size: 24px;
+    transition: 500ms;  
+}
+
+.shopCategory:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 28px;
+}
+
+.buyNowBtn:hover {
+    background-color: #198754;
+    color: white;
+}
+
+.addCartBtn:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+.watchBtn:hover {
+    background-color: #6c757d;
+    color: white;
+}
+
+/* pagination */
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* pagination */
+
+/* singal product view */
+.singleproduct {
+    padding-top: 65px;
+    padding-bottom: 145px;
+    padding: 20px;
+}
+
+.product_qty {
+    width: 105px;
+    height: 45px;
+    padding: 10px;
+}
+
+.qty_buttons {
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30px;
+    border: solid 1px rgb(72, 71, 71);
+}
+
+.qty_inc,
+.qty_dec {
+    width: 100%;
+    height: 50%;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.qty_inc {
+    border-top-right-radius: 5px;
+}
+
+.qty_dec {
+    border-bottom-right-radius: 5px;
+}
+
+/* singal product view */
+
+.emptycart {
+    background-image: url("resourses/emptycart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+}
+
+.emptyView {
+    height: 400px;
+    background-image: url("resourses/watchlistEmptyView.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.emptyRecentView{
+    height: 400px;
+    background-image: url("resourses/cart-x.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.message_box,
+.chat_box {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.btn{
+    transition: 500ms;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.adminNav{
+    transition: 500ms;
+}
+
+.adminNav:hover{
+    transform: scale(1.1);
+}
+
